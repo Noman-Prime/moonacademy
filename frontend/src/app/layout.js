@@ -4,6 +4,7 @@ import { SSEStream } from "@/SSE/subject";
 import Navbar from "@/components/navbar";
 import ScrollToTop from "@/components/scrollToTop";
 import Footer from "@/components/footer";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ const RootLayout = ({ children }) => {
           <Navbar />
           <ScrollToTop />
           {children}
+          <Toaster richColors position="top-right" />
         </SSEStream>
         <Footer />
       </body>

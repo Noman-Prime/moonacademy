@@ -216,15 +216,14 @@ export const getTopic = async (req, res) => {
 
 export const subjectTopic = async (req, res) => {
     try {
-        const { id } = req.params
-        const Subject = await subject.findById(id)
-        if (!Subject) {
+        const { subjectId } = req.params
+        const Topics = await topic.find({ subject: subjectId })
+        if (!Topics || Topics.length === 0) {
             return res.status(404).json({
                 success: false,
-                message: "No subject is found"
+                message: "No Topic is found"
             })
         }
-        const Topics = await topic.find({ subject: id })
         return res.status(200).json({
             success: true,
             topic: Topics

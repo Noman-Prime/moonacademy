@@ -87,8 +87,7 @@ const Slider = () => {
     <>
       {sliders.length > 0 && (
         <div
-          className="relative w-full overflow-hidden rounded-md
-                     h-[240px] sm:h-[300px] md:h-[400px] lg:h-[500px]"
+          className="relative w-full overflow-hidden h-[240px] sm:h-[300px] md:h-[400px] lg:h-[500px]"
         >
           {/* Image */}
           <img

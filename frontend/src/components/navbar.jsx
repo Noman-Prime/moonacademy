@@ -26,20 +26,18 @@ const Navbar = () => {
 
     return (
         <nav className="sticky top-0 z-50 flex items-center justify-between px-6 py-2 bg-[#2B3F43] border-b border-slate-700 shadow-md">
-            <Link href="/" className="text-xl font-bold text-white cursor-pointer">
+            <Link href="/" className="text-xl px-3 py-1 rounded-[10px] border-2 transition-colors hover:text-blue-600 font-bold bg-white text-black">
                 MoonAccedmy
             </Link>
-
-            {/* Desktop Menu */}
             <div className="hidden md:flex gap-4 text-white text-sm font-medium">
-                <Link href="/" className="px-3 py-1 rounded-[10px] border-2 border-transparent transition-colors hover:font-bold hover:bg-white hover:text-black hover:border-white">
+                <Link href="/" className="px-3 py-1 rounded-[10px] border-2 transition-colors hover:text-blue-600 font-bold bg-white text-black">
                     Home
                 </Link>
-                <Link href="/subjects" className="px-3 py-1 rounded-[10px] border-2 border-transparent transition-colors hover:font-bold hover:bg-white hover:text-black hover:border-white">
+                <Link href="/subjects" className="px-3 py-1 rounded-[10px] border-2 transition-colors hover:text-blue-600 font-bold bg-white text-black">
                     Subjects
                 </Link>
-                <Link href="/topicPage" className="px-3 py-1 rounded-[10px] border-2 border-transparent transition-colors hover:font-bold hover:bg-white hover:text-black hover:border-white">
-                    Topic
+                <Link href="/admin" className="px-3 py-1 rounded-[10px] border-2 transition-colors hover:text-blue-600 font-bold bg-white text-black">
+                    AdminControl
                 </Link>
             </div>
 

@@ -18,7 +18,6 @@ export default subjectRouter
     http://localhost:5000/api/v1/subject/update/:id
     http://localhost:5000/api/v1/subject/delete/:id
     http://localhost:5000/api/v1/subject/all
-    http://localhost:5000/api/v1/subject/subject:id
     http://localhost:5000/api/v1/subject/get/:id 
     http://localhost:5000/api/v1/subject/stream    -->SSE-live-stream
 */}
